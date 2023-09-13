@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jimmy's Cocktails</title>
+    <script src="./script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <div class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </div>
+        <div>
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://drinkjimmys.com/cdn/shop/files/Logo-3_1.png?v=1662467080&width=165"
+              alt="Bootstrap"
+              width="120px"
+            />
+          </a>
+        </div>
+
+        <div class="d-flex flex-row gap-2">
+          <div>Total Price : <span id="total_price">0</span></div>
+          <div>Total Items : <span id="total_items">0</span></div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-5">
+      <div class="d-flex gap-4 px-5 flex-row flex-wrap justify-content-center">
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Assorted Cocktail Mixer Pack</h6>
+            <p class="card-text">₹ 799.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="799"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/JC-BLOODY-MARRY-2.jpg?v=1692863591&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Bloody Mary Cocktail Mixer</h6>
+            <p class="card-text">Regular price₹ 799.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="799"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/PI1_b33b5bf3-2f4e-479e-8ae1-688930170499.jpg?v=1692185351&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Celebration Pack</h6>
+            <p class="card-text">Regular price₹ 2,499.00</p>
+            <a
+              href="#"
+              class="btn btn-primary w-100 rounded-5"
+              data-price="2499"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/wb-06_4311e9af-5e44-4d8a-a3e6-670720909343.jpg?v=1692180577&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Dewar's The New Old Fashioned Mix</h6>
+            <p class="card-text">Regular price₹ 799.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="799"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/Jimmy_sCelebrationPack_1_7072f4b7-e1a8-49b5-b2b1-ff71cb403157.png?v=1692879562&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Cosmopolitan Cocktail Mixer</h6>
+            <p class="card-text">₹ 799.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="799"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/products/Untitleddesign.jpg?v=1630058774&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Gin Cherry Sour</h6>
+            <p class="card-text">Regular price₹ 799.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="799"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/Updated_G-Pack_1_4d46c0e0-5404-4f81-9b2c-cfc8fb28fe18.jpg?v=1692186260&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title">Jimmy's Matte Black Exclusive Ice Tongs</h6>
+            <p class="card-text my-3">₹ 299.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="299"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="rounded-4 text-center" style="width: 18rem">
+          <img
+            src="https://drinkjimmys.com/cdn/shop/files/HustleAd1080x1080.png?v=1694090578&width=360"
+            class="card-img-top rounded-4"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-title my-3">Jimmy's Matte Black Peg Measurer</h6>
+            <p class="card-text">Regular price₹ 399.00</p>
+            <a href="#" class="btn btn-primary w-100 rounded-5" data-price="399"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <p>
+                <img
+                  src="https://drinkjimmys.com/cdn/shop/files/Logo-3_1.png?v=1662467080&width=1100"
+                  alt=""
+                  class="w-50"
+                />
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i class="fas fa-home me-3 text-secondary"></i> New York, NY
+                10012, US
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@example.com
+              </p>
+              <p>
+                <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88
+              </p>
+              <p>
+                <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
